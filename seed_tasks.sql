@@ -1,0 +1,22 @@
+INSERT INTO public.tasks (id, phase, title, description, icon, xp, impact_label) VALUES
+(1,1,'Document every task Rhiannon does in a week','Time audit. No mercy. Every email, every reconciliation, every client question. This is the map of what needs to be delegated.','📋',50,'HIGH IMPACT'),
+(2,1,'Identify the 20% eating 80% of her time','Find the 3–5 repeatable tasks that show up every week. These become your first delegation targets.','🎯',40,''),
+(3,1,'Hire or assign a junior bookkeeper / controller support','One hire or contractor removes 60% of the day-to-day. Entry-level, trained to Thryve''s standards. This is the unlock.','🤝',100,'CRITICAL HIRE'),
+(4,1,'Write one SOP for the most repeated task','Doesn''t have to be perfect. A Loom + a Google Doc is enough. The discipline of documenting teaches what''s actually complex vs. routine.','📝',30,''),
+(5,1,'Block 4 hours/week as Leadership Time — non-negotiable','Put it in the calendar. Treat it like a client meeting. Use it for strategy, team building, reading, thinking. It looks empty. It isn''t.','📅',25,''),
+(6,2,'Build a repeatable month-end close checklist','The close is the most time-intensive monthly cycle. Systematize it so a junior can execute with Rhiannon reviewing — not doing.','🗂️',60,''),
+(7,2,'Set up a weekly team standup (15 min, not a meeting)','Problems surface faster. Blockers get cleared. Rhiannon gets information without being the bottleneck.','👥',35,''),
+(8,2,'Define Thryve''s service tiers and delivery standards in writing','What does a Thryve engagement actually look like at each level? Written standards mean anyone can deliver to spec — not just Rhiannon.','💼',50,'HIGH IMPACT'),
+(9,2,'Rhiannon does one leadership-only client QBR','No prep work, no data entry. Just the strategic conversation. She shows up as a trusted advisor, not a bookkeeper.','🧭',45,''),
+(10,2,'Create a simple internal scorecard (weekly, 1 page)','Revenue, pipeline, client health, capacity. Rhiannon reviews it. Doesn''t build it.','📊',40,''),
+(11,3,'Hire or promote a senior accountant / controller','This person owns delivery quality. Rhiannon sets the bar; they maintain it. This is the hire that actually frees her from the work for good.','🏗️',100,'CRITICAL HIRE'),
+(12,3,'Rhiannon speaks or appears publicly once','One strong LinkedIn post, one podcast episode, one panel talk. She is the face of Thryve''s expertise. This opens doors that cold calls don''t.','🎤',55,''),
+(13,3,'Build one strategic referral partnership','One banker, one insurance broker, one M&A advisor, one business attorney. One relationship done right is worth more than 50 LinkedIn connections.','🤝',65,''),
+(14,3,'Define the $5M plan on paper (revenue, headcount, services)','At $5M ARR, what does Thryve look like? How many clients? How many staff? What does Rhiannon''s week look like? Write it down. Make it real.','📈',50,''),
+(15,3,'Lead one internal quarterly planning session','Not a bookkeeping session. A business planning session. Where are we? Where are we going? What do we fix next quarter? Rhiannon runs it.','💡',45,''),
+(16,4,'Calendar audit — zero execution tasks remain','Look at the calendar. Every recurring task that belongs to a junior or a system gets moved. If she''s still touching client deliverables directly, something hasn''t transferred yet.','🗓️',60,''),
+(17,4,'Conduct annual performance reviews for the whole team','Who''s a keeper? Who needs development? Where are the gaps heading into year two? This is her first formal moment as a people leader.','🏆',50,''),
+(18,4,'Close one deal that came from her network or positioning','Not from cold outreach. From her reputation. A referral, a speaking engagement, a LinkedIn post. Proof that she''s a rainmaker, not just an operator.','🌐',80,'MILESTONE'),
+(19,4,'Write a one-page Thryve Way culture doc','How do we operate? What do we believe about clients? What''s not acceptable? This is the DNA of the company. Leaders write this. Employees live it.','📜',40,''),
+(20,4,'Present a Year 2 growth roadmap to Nic and the team','Where is Thryve in 12 months? New markets? New hires? New services? This is the moment she leads from the front. Not the bookkeeper. The architect.','👑',100,'FINAL BOSS')
+ON CONFLICT (id) DO NOTHING;

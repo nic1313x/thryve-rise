@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0f2420;
+    --foreground: #F5F1EB;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #0f2420;
+    color: #F5F1EB;
+    font-family: 'DM Sans', Inter, sans-serif;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #17312A;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2d5a4e;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3d7a68;
+  }
+}
+
+@layer utilities {
+  .text-gradient-teal {
+    background: linear-gradient(135deg, #F5F1EB 0%, #6B7C73 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-surface-gradient {
+    background: linear-gradient(180deg, #1a3330 0%, #0f2420 100%);
+  }
+
+  .glow-orange {
+    box-shadow: 0 0 20px rgba(232, 96, 28, 0.25);
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 20px rgba(30, 61, 53, 0.5);
+  }
+
+  .hulk-glow {
+    box-shadow: 0 0 30px rgba(0, 135, 90, 0.3);
+  }
+
+  .skeleton-pulse {
+    background: linear-gradient(90deg, #1a3330 25%, #2d5a4e 50%, #1a3330 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+}
+
+/* Phase lock overlay */
+.phase-locked {
+  position: relative;
+}
+
+.phase-locked::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 36, 32, 0.6);
+  backdrop-filter: blur(1px);
+  border-radius: inherit;
+  pointer-events: none;
+}
