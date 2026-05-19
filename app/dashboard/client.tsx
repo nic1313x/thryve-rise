@@ -77,7 +77,7 @@ export default function DashboardClient({ userId, userEmail, stats: initialStats
     showToast(getRandomToastMessage(addHulk), { type: 'success' })
 
     // Badge toasts
-    data.newBadges?.forEach((badge: { icon: string; name: string; description: string }) => {
+    data.newBadges?.forEach((badge: { id: string; icon: string; name: string; description: string }) => {
       setTimeout(() => {
         showToast(badge.name, { type: 'badge', icon: badge.icon, subtitle: badge.description })
       }, 800)
